@@ -12,11 +12,9 @@ build:
           Xvfb :0 -screen 0 1024x768x24 > /dev/null 2>&1 &
           xdpyinfo -display :0 &>/dev/null && export DISPLAY=:0
 
-    # Install the specrunner
-    - script:
-        name: Install specrunner
-        code: |
-          sudo gem install jasmine-webkit-specrunner
+    # Install required packages
+    - install-packages:
+        packages: libqt4-dev qt4-qmake
 
     # We assume that you have setup jasmine in your source repository
     # and will use jasmine-headless-webkit for the execution of the tests.
