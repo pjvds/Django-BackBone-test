@@ -23,4 +23,4 @@ build:
         name: Test
         code: |
           cd jasmine-tests
-          jasmine-headless-webkit -c
+          sudo jasmine-headless-webkit -c
