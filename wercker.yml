@@ -17,7 +17,7 @@ build:
     - script:
         name: Install jasmine-headless-webkit
         code: |
-          gem install jasmine-headless-webkit
+          sudo gem install jasmine-headless-webkit
 
     - script:
         name: Test
